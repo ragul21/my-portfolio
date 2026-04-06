@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+/* 1. Force the 'root' to be light, regardless of system settings */
+:root {
+  color-scheme: light !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 2. Kill any automatic dark mode transitions */
+*,
+::before,
+::after {
+  border-color: #e5e7eb; /* Light gray borders */
+}
+
+/* 3. Ensure the body is white */
+body {
+  margin: 0;
+  background-color: white;
+  min-height: 100vh;
+}
